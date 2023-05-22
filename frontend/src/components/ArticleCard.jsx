@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import ArticleType from "../types/article";
 
 function ArticleCard({ article }) {
@@ -15,7 +16,12 @@ function ArticleCard({ article }) {
           />
         </div>
         <div>
-          <p className="btn btn-secondary w-100">En savoir plus</p>
+          <Link
+            to={`/articles/${article.id}`}
+            className="btn btn-secondary w-100"
+          >
+            En savoir plus
+          </Link>
         </div>
       </div>
     </div>
