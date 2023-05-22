@@ -1,12 +1,9 @@
-import Home from "./pages/Home";
-
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <Home />
-      <p>coucou</p>
+      <h1 className="text-center text-secondary">My Travel Blog </h1>
     </div>
   );
 }
