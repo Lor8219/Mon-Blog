@@ -6,6 +6,9 @@ function Articles() {
   return (
     <section className="container">
       <div className="row">
+        {articles.map((article) => (
+          <ArticleCard article={article} />
+        ))}
         <ArticleCard article={articles[0]} />
       </div>
     </section>
