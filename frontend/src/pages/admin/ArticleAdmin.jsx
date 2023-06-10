@@ -1,7 +1,47 @@
 import React from "react";
 
 function ArticleAdmin() {
-  return <div>ArticleAdmin</div>;
+  return (
+    <div className="container">
+      <form className="row">
+        <label htmlFor="">
+          Titre
+          <input type="text" required minLength={10} maxLength={255} />
+        </label>
+
+        <label htmlFor="">
+          Sous titre
+          <input type="text" required minLength={15} maxLength={255} />
+        </label>
+
+        <label htmlFor="">
+          Résumé
+          <textarea required minLength={10} />
+        </label>
+
+        <label htmlFor="">
+          Texte
+          <textarea required minLength={10} />
+        </label>
+
+        <label htmlFor="">
+          Source image
+          <input type="text" required minLength={10} maxLength={255} />
+        </label>
+
+        <label htmlFor="">
+          Texte alternatif
+          <input type="text" required minLength={1} maxLength={255} />
+        </label>
+
+        <label htmlFor="">
+          Liste de tags
+          {/* récupérer la liste des tags existants pour les afficher */}
+        </label>
+        <button type="submit">Ajouter</button>
+      </form>
+    </div>
+  );
 }
 
 export default ArticleAdmin;
